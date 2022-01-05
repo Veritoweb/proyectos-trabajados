@@ -1,0 +1,6 @@
+@import url(header.css);
+@import url(styles.css);
+
+:root{
+    --fuente: CreteRound;
+}
