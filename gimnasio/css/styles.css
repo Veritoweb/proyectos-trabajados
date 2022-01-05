@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,700;1,300&display=swap');
+
+@font-face{
+   font-family: "espresso";
+    src: url(../fonts/Lets\ Espresso.ttf);
+}
+@font-face{
+    font-family:'bolditalic' ;
+    src: url(../fonts/BodoniFLF-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
+}
+*{margin: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*----------------Header-----------------------------*/
+.header{
+    height: 628px;
+}
+.header .encabezado{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/banner.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    text-align: center;
+}
+.header .encabezado h1{
+    width: 50%;
+    background-color: rgba(255, 255, 255,0.5);
+    height: auto;
+    font-weight:400;
+    font-size: 28px;
+    padding-top: 0; 
+}
+.header .encabezado h1 span{
+    display: block;
+    color: #b45008;
+    font-family: 'bolditalic';
+    font-size: 95px;
+}
+.header .menu1{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+}
+.header .menu1 .logo{
+    margin-top: 3px;
+    margin-left: 0;
+}
+.logo img{
+      width: 60px;
+      height: 60px;   
+}
+
+.header .menu1 .nav{
+    list-style-type: none;
+    display: flex;
+    padding-top: 25px;  
+}
+.nav li a{
+    color: #6e7c7c;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px 2px 20px;    
+}
+.nav li a:hover{
+    text-decoration: underline;
+    color: darkslategray;
+    font-size: 20px;
+}
+
+/*--------------Seccion 1------------------------------*/
+.sect1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 4fr 3fr;
+    grid-template-rows: 200px 200px;
+    background-color:#cc561e ;
+    grid-template-areas:
+    'articulo img1 img2'
+    'articulo img1 img3';
+}
+.sect1 .art1{ 
+  grid-area: articulo;
+}
+.sect1 .art1 h2{
+    color: #beca5c;
+    margin-top: 15px;
+    padding-left: 10px;
+    font-family:'bolditalic';
+    font-size: 25px;
+}
+.sect1 .art1 p{
+    padding:15px ;
+    font-size: 12px;
+    color: white;
+}
+.sect1 div{
+    margin: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sect1 .img1{
+    grid-area: img1;
+    background-image: url(../img/gim-05.jpg);
+    background-position-x: -129px;
+    margin: 10px;
+}
+.sect1 .img2{
+    grid-area: img2;
+    background-image: url(../img/gym-02.JPG);
+    background-position-x: -3px;
+    background-position-y: 2px;
+}
+.sect1 .img3{
+    grid-area: img3;
+    background-image: url(../img/gimnasio-ejercicio-pesas-chicas-felicidad-770-dreamstime.jpg);
+    background-position-x: 2px;
+    background-position-y: -2px;
+}
+/*----------------------------Seccion 2--------------------------*/
+.sect2{
+    display: grid;
+    grid-template-columns: 5fr 4fr 4fr;
+    grid-template-rows: 80px auto auto 350px;
+    grid-template-areas:
+    '. titulo titulo'/*el punto deja el espacio*/
+    'imagen natacion funcional'
+    'imagen aerobicos marciales'
+    '.  musculacion danza';
+    column-gap: 15px;
+    margin-top: 25px;
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+.sect2 .imagen{
+    grid-area: imagen;
+    background-image: url(../img/ejercicio.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 2px;
+    margin-top: 38px;
+    border-radius: 10px 20px;
+    box-shadow: 1px 3px 10px black;
+    height: auto;  
+}
+.sect2 .titulo{
+    grid-area: titulo;
+    color: #aa2b1d;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding-left: 15px;
+}   
+.sect2 article{
+    margin-bottom: 15px;
+    margin-left: 10px;
+} 
+.sect2 article h3{
+    color:#beca5c;
+    font-size: 25px;
+    border-bottom: 1px dotted #aa2b1d;
+    text-shadow: 2px 3px rgba(200, 200, 14, .5);
+    padding-left: 15px;
+}
+.sect2 article p{
+    padding: 9px;
+    font-size: 15px;
+}
+.sect2 .natacion{
+    grid-area: natacion;    
+}
+.sect2 .funcional{
+    grid-area: funcional;
+}
+.sect2 .aerobicos{
+    grid-area: aerobicos;
+}
+.sect2 .aerobicos h3{
+    padding-top: 0;
+}
+.sect2 .marciales{
+    grid-area: marciales;
+}
+.sect2 .musculacion{
+    grid-area: musculacion;
+}
+.sect2 .danza{
+    grid-area: danza;
+}
+#chat{
+    position: fixed;
+    top: 88%;
+    left: 95%;
+    background-image: linear-gradient(rgba(226,127,14,.5),rgba(255,255,255,.5)), url(../img/chat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+  
+}
+#chat:hover{
+background-image: linear-gradient(rgba(206, 121, 19, 0.8),rgba(231, 220, 220, 0.3)), url(../img/chat.png);
+width: 60px;
+height: 60px;
+}
+/*----------footer-------------------*/
+.footer{
+    background-color:#cc561e;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-rows:105px ;
+    grid-template-areas: 
+    'insta list1 list2 list3';
+    color: white;
+}
+.pie1, .pie2, .pie3{
+  font-size: 15px;
+  padding-top: 20px;
+}
+.pie1{
+    grid-area: list1;
+}
+.pie2{
+    grid-area:list2 ;
+}
+.pie3{
+    grid-area: list3;
+}
+.insta{
+    grid-area: insta;
+}
+.footer div{
+margin-top: auto;
+margin-bottom: auto;
+text-align: center;
+}
+.footer div a{ 
+    color: white;
+    text-decoration: none;
+    font-size: 18px;  
+}
+/*-------------------------Formulario--------------------------*/
+.btn{
+    margin-left: 25%;
+}
+.botones{
+    justify-content: space-between;
+}
+.container{
+    position: absolute;
+    width: 55%;
+    top: 25%;
+    left: 25%;
+}
+.container-fluid{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    height: 100%;
+}
+#formulario{
+    display: none;
+}
+form{
+    width: 100%;
+}
+
+.form-group{
+    margin-bottom: 25px;
+}
+.show{
+    display:block !important;
+}
+
+
+@media(max-width:768px){/*menor a 768 se ve asi*/
+    body{
+        font-size: 80%;
+    }
+    /*---------Header----------------------------*/
+    .header .encabezado h1{
+        width: 54%;
+    }
+    .header .encabezado h1 span{
+        font-size: 15vw;
+    }
+    /*-------------Section 1---------------------*/
+    .sect1{
+        grid-template-columns: 6fr 4fr;
+        grid-template-rows: 214px 150px 150px;
+        grid-template-areas:
+        'articulo articulo'
+        'img1 img2'
+        'img1 img3';
+        font-size: auto;
+    }
+    .sect1 .art1  p{
+        font-size: 79%;
+    }
+    .sect1 .img1{
+        background-position-x: -85px;
+    }
+    
+    /*------------Section 2------------------------*/
+    .sect2{
+        grid-template-columns: 47% 48%;
+        grid-template-rows: 80px auto auto auto ;
+        grid-template-areas:
+        'titulo titulo'
+        'natacion funcional'
+        'aerobicos marciales'
+        'musculacion danza';
+    }
+    .sect2 .aerobicos h3{
+        padding-top: 0;
+    }
+    .sect2 .musculacion h3{
+        padding-left: 3px;
+    }
+
+    #chat{
+        left: 85%;
+    }
+    /*----------Footer----------------------------*/
+    .footer{
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        grid-template-rows:80px auto ;
+        grid-template-areas: 
+        '. insta . '
+        'list1 list2 list3';
+    }
+    .pie1, .pie2, .pie3{ 
+        font-size: .75rem;
+        padding-right: 10px;
+    }
+    /*-----------Formulario-----------------------*/
+    .botones{
+      display: flex;  
+      justify-content: space-evenly;
+    } 
+    .botones .btn{
+        margin-left: 0 !important;
+    }
+
+}
+@media(max-width:450px){
+    .sect2 article h3{
+        font-size: 23px;
+    }
+    .sect2 .aerobicos h3{
+        padding-top: 27px;
+    } 
+    .sect2 .musculacion h3{
+        padding-left: 0;
+    } 
+    .sect1{ 
+        grid-template-rows: 265px 150px 150px;
+    }
+}
