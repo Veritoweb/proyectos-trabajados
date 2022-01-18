@@ -1,0 +1,199 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+.Fondo{
+    background-image: url(../img/IMG_20210121_184217_969.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 56.25rem;   
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.flex{
+    display: flex;
+}
+a{text-decoration: none;}
+
+/*----------Header----------*/
+.header{
+    width: 100%;
+    height: 5.5rem;
+    background-color: black;
+    justify-content: right;
+}
+.logo {width:25%}
+.logo img{
+    width:5rem;
+    height: 5rem;  
+}
+.menu{ width: 75%; }
+
+.lista1{
+    justify-content: space-around;
+    line-height: 5rem;
+}
+
+.lista1 li a{
+    color:white;
+    font-size: 1rem;
+}
+.lista1 li a:hover{
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+.redes{display:none}
+/*----------seccion foto----------*/
+.foto{height: 50rem;} 
+/*----------Seccion 1 ------------*/
+.seccion1 h2{
+    font-size: 1.56rem;
+}
+.seccion1 h2 img{
+    width: 45px;
+    height: 45px;
+}
+.mano, .calidad, .eco{
+    margin-left: .81rem;
+    margin-right: .63rem;
+}
+.seccion2{
+    background-color: white;
+    
+}
+.seccion2 h2{
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+    padding-top: 10px;
+}
+.productos {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.productos a{
+    width: 6.38rem;
+    height: 6.38rem;
+    margin: 2px;
+}
+.productos img{
+    width: 98%;
+ 
+}
+/*----------Footer-----------*/
+.footer{
+    /* display: flex;
+    justify-content:flex-start;   */
+    background-color: black;
+
+}    
+.footer hr{
+    width: 15%;
+    margin:0;
+    padding-left: 5px;
+}
+.footer h2{
+    margin-left: 15px;
+}
+.Nosotros, .Contacto, .Redes{
+    /* width: 33%; */
+    color: white;
+    
+}
+.Nosotros p{
+    padding: 20px;
+    margin-right: 25px;
+}
+   
+.Contacto figure a{
+    color: white;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.Contacto figure img{
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    
+}
+.Redes a img{
+    width: 35px;
+    height: 35px;
+    padding-top: 30px;
+    padding-right: 15px;
+    
+}
+.contenedor-redes{
+    margin-left: 2.5rem;
+}
+.Copy{
+    color: grey;
+    background: whitesmoke;
+   text-align: center;
+}
+
+@media(min-width: 600px){
+    /*----------Header-----------*/
+    .header{height: 12.5rem}
+    
+    .logo img{
+        width: 12.5rem;
+        height: 12.5rem;  
+    }
+    .redes{
+        display: flex;
+        width: 15%;
+        justify-content: space-around;  
+        margin-left: 5.31rem;
+        margin-top: 2rem;
+    }
+   
+    .redes a img{
+        width: 2.19rem;
+        height: 2.19rem;    
+    }
+    .redes a img:hover{
+        width: 2.81rem;
+        height: 2.81rem;
+    }
+    .lista1{padding-top: 2.81rem;}
+    .lista1 li a{font-size: 1.25rem}
+    .lista1 li a:hover{font-size: 2.19rem;}
+    
+  /*--------------Seccion 1-------*/  
+    .seccion1{
+        display: flex;
+        justify-content:space-between;
+    }
+    .seccion1 p{
+        font-size: 1.1rem;
+    }
+   /*----------Seccion 2-----------*/ 
+   .productos a{
+    width: 20.38rem;
+    height: 20.38rem;
+    margin: 5px;
+   } 
+   
+   /*----------Footer-----------*/
+   .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;  
+   }
+   .Nosotros, .Contacto, .Redes{
+    width: 33%;
+}
+.Copy{
+    width: 100%;
+    height:1.25rem;
+}
+.Copy p{
+    margin: 0;
+}
+}

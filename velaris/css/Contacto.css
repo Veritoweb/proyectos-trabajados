@@ -1,0 +1,63 @@
+.Fondo{
+  background-image: url(../img/20170110234817_IMG_5486.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50rem;
+  
+}
+.foto{
+    height: 28.12rem;
+}
+.foto div h1{
+    color:white;
+    font-size: 3.12rem;
+    padding: .94rem;   
+    margin-top: .94rem;
+}
+.Formulario{
+    background-color: white;
+    height: 40.56rem;
+    padding: 1rem;
+}
+
+.Form h2{
+    font-size: 25px;
+    text-decoration: underline; 
+    font-style: italic;
+}
+.Form{text-align: center;}
+input{
+    height:30px;
+    width: 300px;
+}
+textarea{
+    height: 100px;
+    width: 300px;
+}
+.seccion2 h2{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline; 
+    font-style: italic;
+}
+.seccion2 li{
+    list-style-type: none;
+    color: black;   
+}
+.seccion2 li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+@media(min-width: 600px){
+
+    .foto div h1{ padding: 20px}
+    .Formulario{
+        display: flex;
+        justify-content: space-around;
+        height: 31.25rem;
+    }
+    .Form, .seccion2{width: 50%;}
+    .seccion2 li{ margin-left: 200px;}
+}
+

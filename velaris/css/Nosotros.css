@@ -1,0 +1,66 @@
+.Fondo{
+   background-image: url(../img/IMG_2431.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   background-position-x: 53.37rem;
+}
+ .Seccion1{
+     height: 450px;
+ }
+ .Seccion1 div h1{
+     color:white;
+     font-size: 2.81rem;
+     padding-left: 1.2rem;
+     font-family: 'ubuntu';
+
+}
+.seccion2{
+    background-color: white;
+}
+
+.imag1, .imag2, .imag3{
+width: 90%;
+margin: 1rem;
+padding-top: 3.1rem;
+
+}
+.imag1 img, .imag2 img, .imag3 img{
+   width: 100%;
+}
+article hr{
+    width: 10%;
+}
+.article1, .article2, .article3{padding: 1rem;}
+.article1 h2, .article2 h2, .article3 h2{
+  margin: 0;
+  padding: 0;
+}
+.article1 p, .article2 p, .article3 p{
+    padding: 1rem;
+}
+
+@media(min-width: 600px){
+.Fondo{background-position-x:0}
+.Seccion1 div h1{ 
+    padding: 2.5rem;
+    text-align: right;
+}
+.aromas, .mano, .reutilizable{
+    display: flex;
+    justify-content: center;
+}
+.mano{
+    flex-direction: row-reverse;
+}
+.imag1, .imag2, .imag3{
+    width: 30%;
+    margin-top: .94rem;
+    padding-left: 3.12rem;
+    }
+.article1, .article2, .article3{
+    width: 60%;
+    padding: 1.5rem;
+    margin-top: 3.5rem;
+}   
+
+}
