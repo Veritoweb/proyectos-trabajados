@@ -365,6 +365,6 @@ form{
         padding-left: 0;
     } 
     .sect1{ 
-        grid-template-rows: 265px 150px 150px;
+        grid-template-rows: 301px 150px 150px;
     }
 }
