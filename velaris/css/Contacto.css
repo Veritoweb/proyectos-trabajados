@@ -1,3 +1,4 @@
+
 .Fondo{
   background-image: url(../img/20170110234817_IMG_5486.jpg);
   background-size: cover;
@@ -5,6 +6,7 @@
   height: 50rem;
   
 }
+
 .foto{
     height: 28.12rem;
 }
@@ -21,22 +23,23 @@
 }
 
 .Form h2{
-    font-size: 25px;
+    font-size: 1.56rem;
     text-decoration: underline; 
     font-style: italic;
 }
 .Form{text-align: center;}
-input{
-    height:30px;
-    width: 300px;
+input, button, textarea{
+    height:1.87rem;
+    width: 18.75rem;
+    margin: 1.5rem 1rem 0;
 }
 textarea{
-    height: 100px;
-    width: 300px;
+    height: 6.25rem;
+    width: 19.75rem;
 }
 .seccion2 h2{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.56rem;
     text-decoration: underline; 
     font-style: italic;
 }
@@ -46,18 +49,38 @@ textarea{
 }
 .seccion2 li a{
     color: black;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: none;
+}
+.mapa{
+    margin-top: 1.5rem;
+}
+.hidden{
+    display: none;
+}
+.input-error{
+    color: red;
+    font-size: smaller;
+    margin: 0;
+}
+.error{
+    border: 2px solid red;
+}
+.valido{
+    border: 2px solid rgb(115, 189, 5) ;
 }
 @media(min-width: 600px){
 
-    .foto div h1{ padding: 20px}
+    .foto div h1{ padding: 1.25rem}
     .Formulario{
         display: flex;
         justify-content: space-around;
         height: 31.25rem;
     }
     .Form, .seccion2{width: 50%;}
-    .seccion2 li{ margin-left: 200px;}
+    .seccion2 li{ margin-left: 12.5rem;}
+    .mapa{
+        margin-top: 0;
+    }
 }
 
