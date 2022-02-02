@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+body{
+    border: 1rem solid rgb(187, 124, 212); 
+    height: 100vh;
+    font-family:'Poppins', sans-serif;;
+}
+ul{list-style-type: none;}
+a{text-decoration: none;}
+
+.fa-check-circle{
+    color: green;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color: gray;
+}
+/*----------Header----------*/
+
+.header{
+    text-align: center;
+    height: 11.25rem;
+    background-image: url(../img/summer.jpg); 
+    background-repeat: no-repeat;
+}
+.titulo{
+    background-color: rgb(235, 151, 238);
+    font-weight: bold;
+    margin: -1rem;
+    display: inline-block;
+    width: 12.75rem;
+}
+.content{position: relative;}
+
+.clear{
+    margin-top: 2rem;
+    padding-right: 1rem;
+    font-size: 1.8rem;
+    color: rgb(162, 206, 206);
+    text-align: right;
+}
+/*----------Items----------*/
+.lista{
+    height: 21.86rem;
+}
+.item{
+    display: flex;
+    width: 100%;
+    height: 2.31rem;
+    align-items: center;
+    border-bottom: 0.1rem solid silver;
+}
+:is(.far){
+    width: 10%;
+    text-align: center;
+    font-size: 1.44rem;
+}
+.texto{
+    width: 80%;
+    margin-left: .5rem;
+}
+
+/*----------agregar item---------*/
+.add{
+    position: absolute;
+    bottom: -4.25rem;
+    height: 3.44rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add i{
+    font-size: 1.44rem;
+    margin-right: .7rem;
+    color: royalblue;
+}
+.add input{
+    width: 15.63rem;
+    height: 1.87rem;
+    padding-left: .5rem;
+}
+@media(min-width:768px){
+body{
+    border:none;
+}    
+.xl{
+    margin-left: 25%;
+    width: 24.5rem;
+    height: 95vh;
+    margin-top: 1rem;
+    border: 1rem solid rgb(187, 124, 212); 
+}
+.add{
+  bottom: -2.25rem;  
+}
+.add i{
+    font-size:2.2rem ;
+}
+.add input{
+    width: 16rem;
+    height: 2rem;
+}
+
+}
